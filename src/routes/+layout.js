@@ -1,9 +1,9 @@
 import { browser } from "$app/environment";
 
-export const load = async () => {
+export async function load() {
   if (browser) {
     return {
-      diary: JSON.parse(localStorage.getItem("diary")) || [],
+      diary: JSON.parse(localStorage.getItem("diary")) ?? [],
     };
   }
-};
+}
