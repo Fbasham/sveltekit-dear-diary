@@ -1,7 +1,6 @@
 <script>
   import { getContext } from "svelte";
   let diary = getContext("diary");
-
   export let form;
 
   if (form && $diary) {
